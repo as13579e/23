@@ -9,8 +9,8 @@
 * git pull origin master    拉取和合并  远程仓库的master分支到本地仓库的master分支
 * git branch 分支名         创建分支
 * git branch -a	查看所有分支
-* git branch -d 分支名           删除分支
-* git branch -D feature-vulcan   强行删除
+* git branch -d 分支名           删除本地分支
+* git branch --delete 分支名       删除远程分支
 * git checkout 分支名         切换分支
 * git remote add origin 项目https或ssh克隆地址               本地仓库关联远程仓库
 * git clone 项目https或ssh克隆地址                 克隆远程仓库
