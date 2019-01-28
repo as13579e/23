@@ -1,4 +1,5 @@
 ## git常用操作命令
+
 ### 使用较多
 * git status    查看仓库变更状态：
 * git init   把当前目录变成一个git仓库
@@ -7,6 +8,9 @@
 * git push origin develop:master   把本地仓库的develop分支推送到远程仓库的master分支,当本地分支和远程分支同名时，develop:master可以简写才分支名
 * git pull origin master    拉取和合并  远程仓库的master分支到本地仓库的master分支
 * git branch 分支名         创建分支
+* git branch -a	查看所有分支
+* git branch -d 分支名           删除分支
+* git branch -D feature-vulcan   强行删除
 * git checkout 分支名         切换分支
 * git remote add origin 项目https或ssh克隆地址               本地仓库关联远程仓库
 * git clone 项目https或ssh克隆地址                 克隆远程仓库
@@ -16,10 +20,12 @@
 
 
 ### 使用较少
+* git config --global user.name "Your Name"      使用Git的第一件事就是设置你的名字和email
+* git config --global user.email "email@example.com"        使用Git的第一件事就是设置你的名字和email
+* git config -l     查看本地git用户名和邮箱
 * git rm --cache <fileUrl>   撤销某个文件在暂存区的修改
 * git fetch origin master    拉取  远程仓库的master分支的内容
 * git merge origin master    合并  远程仓库的master分支到本地仓库的master分支
-* git config -l     查看本地git用户名和邮箱
 * git diff 文件名          查看文件修改内容
 * git log      查看仓库提交日志 
 * git reflog   查看仓库所有版本，一次提交一个版本 
