@@ -12,3 +12,5 @@
 * 本地版本回退：git reset --hard SHA  //SHA为某次提交的id
 * 远程仓库本报回退：（1） git reset --hard SHA //先本地回退（2）git push -f //再强制推送
 * 合并某个提交到当前分支：（1） git cherry-pick SHA
+
+develop
