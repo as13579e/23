@@ -14,3 +14,4 @@
 * 合并某个提交到当前分支：（1） git cherry-pick SHA
 
 develop
+master
