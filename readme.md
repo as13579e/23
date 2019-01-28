@@ -8,6 +8,8 @@
 * git pull origin master    拉取和合并  远程仓库的master分支到本地仓库的master分支
 * git branch 分支名         创建分支
 * git checkout 分支名         切换分支
+* git remote add origin 项目https或ssh克隆地址               本地仓库关联远程仓库
+* git clone 项目https或ssh克隆地址                 克隆远程仓库
 * 本地版本回退              git reset --hard SHA  //SHA为某次提交的id
 * 远程仓库本报回退          （1） git reset --hard SHA //先本地回退（2）git push -f //再强制推送
 * 合并某个提交到当前分支          （1） git cherry-pick SHA
@@ -18,3 +20,6 @@
 * git fetch origin master    拉取  远程仓库的master分支的内容
 * git merge origin master    合并  远程仓库的master分支到本地仓库的master分支
 * git config -l     查看本地git用户名和邮箱
+* git diff 文件名          查看文件修改内容
+* git log      查看仓库提交日志 
+* git reflog   查看仓库所有版本，一次提交一个版本 
