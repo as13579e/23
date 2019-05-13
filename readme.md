@@ -29,3 +29,13 @@
 * git diff 文件名          查看文件修改内容
 * git log      查看仓库提交日志 
 * git reflog   查看仓库所有版本，一次提交一个版本 
+
+
+### Git错误--git remote: HTTP Basic: Access denied
+原因：本地git配置的用户名、密码与gitlabs上注册的用户名、密码不一致。
+
+解决方案： 
+1. 如果账号密码有变动 用这个命令` git config –system –unset credential.helper` 重新输入账号密码 应该就能解决了 
+2. 如果用了第一个命令 还不能解决问题那么 用这个命令： `git config –global http.emptyAuth true`
+3. 如果以上两个方法不起作用，那么采用以下方法：
+>进入控制面板》用户账号》凭据管理器？windows凭据》普通凭据，在里面找到git，点开编辑密码，更新为最新密码之后就可以正常操作了。
