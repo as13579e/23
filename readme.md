@@ -39,3 +39,5 @@
 2. 如果用了第一个命令 还不能解决问题那么 用这个命令： `git config –global http.emptyAuth true`
 3. 如果以上两个方法不起作用，那么采用以下方法：
 >进入控制面板》用户账号》凭据管理器？windows凭据》普通凭据，在里面找到git，点开编辑密码，更新为最新密码之后就可以正常操作了。
+
+* 使用npm命令来安装、升级、卸载各种包，而且后台走的还是淘宝镜像 `npm config set registry https://registry.npm.taobao.org` // 配置后可通过下面方式来验证是否成功 `npm config get registry`   //这里直接输出淘宝镜像的地址registry.npm.taobao.org
