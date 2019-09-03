@@ -41,3 +41,26 @@
 >进入控制面板》用户账号》凭据管理器？windows凭据》普通凭据，在里面找到git，点开编辑密码，更新为最新密码之后就可以正常操作了。
 
 * 使用npm命令来安装、升级、卸载各种包，而且后台走的还是淘宝镜像 `npm config set registry https://registry.npm.taobao.org` // 配置后可通过下面方式来验证是否成功 `npm config get registry`   //这里直接输出淘宝镜像的地址registry.npm.taobao.org
+
+### 在提交代码前通过eslint验证代码
+```
+npm install husky -D -S
+
+//int-staged
+//使用 lint-staged 了。它只会校验检查你提交或者说你修改的部分内容。
+npm install lint-staged -D -S
+然后，修改 package.json 配置：
+
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+},
+"lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+```
+[Git Hooks](https://panjiachen.github.io/vue-element-admin-site/zh/guide/advanced/git-hook.html#husky)
