@@ -64,3 +64,8 @@ npm install lint-staged -D -S
   }
 ```
 [Git Hooks](https://panjiachen.github.io/vue-element-admin-site/zh/guide/advanced/git-hook.html#husky)
+
+### 误进去git特殊模式退出方法
+1. 输入小写字母i，此时进入编辑模式，可以输入你想输入的内容
+2. 按下esc键，此时退出编辑模式，输入英文语法下的冒号:，再输入wq即可保存退出
+3. 也可以按下esc退出编辑模式之后连续按输入两个大写字母Z退出
